@@ -7,7 +7,11 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img src={BACKGROUND_IMAGE} alt="backgroundImage" />
+        <img
+          className="h-screen object-cover md:h-auto md:object-none"
+          src={BACKGROUND_IMAGE}
+          alt="backgroundImage"
+        />
       </div>
       <LoginForm />
     </div>

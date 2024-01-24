@@ -23,8 +23,7 @@ export const API_OPTIONS = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiYjNkYzkyMDg5MzkyYTQwODMzNzhmMGQzNDJjMDc1NCIsInN1YiI6IjY1YTk3NDg1ZDk1NDIwMDBkNDIwZjhiYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.EdYySYX40p8lY7lpl90A64npeYEGmDGMdyuNp_-Drrc",
+    Authorization: "Bearer " + process.env.REACT_APP_TMDB_KEY,
   },
 };
 
@@ -35,3 +34,10 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "hindi", name: "Hindi" },
   { identifier: "spanish", name: "Spanish" },
 ];
+
+export const OPENAI_API_KEY = process.env.REACT_APP_OPENAI_API_KEY;
+
+export const HARDCODED_SEARCH_TEXT = "Best Indian feel good movies";
+
+export const GPT_HARDCODED_MOVIE_RESULTS =
+  "Queen, Piku, Dangal, Zindagi Na Milegi Dobara, 3 Idiots";
